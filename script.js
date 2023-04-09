@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded',() =>{
           
           data.forEach(country => {
               output += `<option value="${country.name.common}">${country.name.common}</option>`
-             // console.log(country.name.common);
+              //console.log(country.name.common);
           })
   
           selectDrop.innerHTML = output;
@@ -31,10 +31,7 @@ document.addEventListener('DOMContentLoaded',() =>{
 
 nextBtn.forEach((button) => {
   button.addEventListener("click", () => {
-    
-      changeStep("next");
-
-    
+    changeStep("next");
   });
 });
 prevBtn.forEach((button) => {
@@ -46,12 +43,6 @@ prevBtn.forEach((button) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const inputs = [];
-  for(var i=0; i < form.elements.length; i++){
-    if(form.elements[i].value === '' && form.elements[i].hasAttribute('required')){
-      alert('There are some required fields!');
-      return false;
-    }
-  }
   form.querySelectorAll("input").forEach((input) => {
     const { name, value } = input;
     inputs.push({ name, value });
@@ -64,9 +55,9 @@ form.addEventListener("submit", (e) => {
   });
   
 
+ //update
  
-  let data = inputs
-  console.log(inputs.name);
+  console.log(inputs);
   form.reset();
 });
 
@@ -74,8 +65,8 @@ function changeStep(btn) {
   let index = 0;
   const active = document.querySelector(".active");
   index = steps.indexOf(active);
+  steps[index].classList.remove("active");
   if (btn === "next") {
-    steps[index].classList.remove("active");
     index++;
   } else if (btn === "prev") {
     index--;
