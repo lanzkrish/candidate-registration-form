@@ -20,30 +20,30 @@
               <div class="form-group">
                 <label for="name">Full Name</label><br>
                 <input type="text" id="firstName" name="candidate-first-name" placeholder="FirstName" required>
-                <input type="text" id="lastName" name="candidate-last-name" placeholder="lastName">
+                <input type="text" id="lastName" name="candidate-last-name" placeholder="lastName" required>
               </div>
               <div class="form-group">
                 <label for="dob"> Date of Birth</label><br>
-                <input type="date" id="dateofbirth" name="dob" placeholder="DD/MM/YYYY"  >
+                <input type="date" id="dateofbirth" name="dob" placeholder="DD/MM/YYYY" required >
               </div>
               <div class="form-group">
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="youremail@abcd.com">
+                <input type="email" id="email" name="email" placeholder="youremail@abcd.com"required>
               </div>
               <div class="form-group">
                 <label for="father-name">Father's Name</label><br>
-                <input type="text" placeholder="First Name" id="first-name" name="father-first-name" >
-                <input type="text" placeholder="Last Name" id="last-name"  name="father-last-name">
+                <input type="text" placeholder="First Name" id="first-name" name="father-first-name" required>
+                <input type="text" placeholder="Last Name" id="last-name"  name="father-last-name"required>
               </div>
               <div class="form-group">
                 <label for="mother-name">Mother's Name</label><br>
-                <input type="text" placeholder="First Name" id="first-name" name="mother-first-name" >
-                <input type="text" placeholder="Last Name" id="last-name"  name="mother-last-name"> 
+                <input type="text" placeholder="First Name" id="first-name" name="mother-first-name" required>
+                <input type="text" placeholder="Last Name" id="last-name"  name="mother-last-name"required> 
               </div>
               <div class="form-group">
                 <label for="gender">Gender</label><br>
 
-                    <select name="gender" id="gender">
+                    <select name="gender" id="gender" required>
                         <option value="" disabled selected>-- select gender --</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -52,7 +52,7 @@
               </div>
               <div class="form-group">
                 <label for="nationality">Nationality</label><br>
-                                <select name="nationality"  >
+                                <select name="nationality" required >
                                 
                                     <option value="" disabled selected>-- select one --</option>
                                     <option value="afghan">Afghan</option>
@@ -251,9 +251,9 @@
               </div>
               <div class="form-group">
                 <label for="home-address">Home Address</label><br>
-                <input type="text" id="home-address" name='street-address'placeholder="Street Address" style="width: 99%;" >
-                <input type="text" id="city" name="city" placeholder="City"   >
-                <select id="countries" name="countries" placeholder="Country"  >
+                <input type="text" id="home-address" name='street-address'placeholder="Street Address" style="width: 99%;" required >
+                <input type="text" id="city" name="city" placeholder="City"  required >
+                <select id="countries" name="countries" placeholder="Country" required >
                 </select>
               </div>
               <div class="form-group">
@@ -262,7 +262,7 @@
               </div>
               <div class="form-group">
                 <label for="telephone">Telephone-Mobile</label><br>
-                <input type="text"id="telephone-mobile" name="telephone-mobile" placeholder="0123456789" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" >
+                <input type="text"id="telephone-mobile" required name="telephone-mobile" placeholder="0123456789" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" >
               </div>
               
               <button type="button" class="next-btn">Next</button>
@@ -272,31 +272,31 @@
                 <h2>Educational Background</h2>
               <div class="form-group">
                 <label for="hscname">Enter HSC Institution name</label><br>
-                <input type="text" name="hscname" placeholder="High School Name" id="hscname"  >
+                <input type="text" name="hscname" placeholder="High School Name" id="hscname"  required>
               </div>
               <div class="form-group">
                 <label for="hscboard"> HSC Board</label><br>
-                <input type="text" name="hscboard" id="hscboard" placeholder="High School Board"   >
+                <input type="text" name="hscboard" id="hscboard" placeholder="High School Board"  required >
               </div>
               <div class="form-group">
                 <label for="hscscore"> Score HSC</label><br>
-                <input type="number" name="hscscore" id="hscscore" placeholder="score in percentage"  >
+                <input type="number" name="hscscore" id="hscscore" placeholder="score in percentage" required >
               </div>
               <div class="form-group">
                 <label for="sscname">Enter SSC Institute name </label><br>
-                <input type="text" name="sscname" placeholder="Secondary School Name" id="sscname"  >
+                <input type="text" name="sscname" placeholder="Secondary School Name" id="sscname" required >
               </div>
               <div class="form-group">
                 <label for="sscscore"> Score SSC</label><br>
-                <input type="number" name="sscscore" id="sscscore" placeholder="score in percentage"  >
+                <input type="number" name="sscscore" id="sscscore" placeholder="score in percentage"  required>
               </div>
               <div class="form-group">
                 <label for="currenteducation">What are you Currently Persuing</label><br>
-                <input type="text" name="currenteducation" id="currenteducation" placeholder="Currently Persue"  >
+                <input type="text" name="currenteducation" id="currenteducation" placeholder="Currently Persue" required >
               </div>
               <div class="form-group">
                 <label for="currentname">Current Educational Institute name </label><br>
-                <input type="text" name="currentname" d="currentname" placeholder="Current Educational Institute Name" id="currentname"  >    
+                <input type="text" name="currentname" d="currentname" placeholder="Current Educational Institute Name" id="currentname"  required>    
               </div>
               <div class="form-group">
                 <label for="currentscore"> Overall Percentage</label><br>
@@ -311,17 +311,18 @@
             </div>
       
             <div class="step step-3">  
+              <h2>Upload Documents</h2>
               <div class="form-group">
                 <p>Resent passport size photo</p><br>
-                <input type="file" name="passportphoto" id="passportphoto">
+                <input type="file" name="passportphoto" id="passportphoto" required>
               </div>
               <div class="form-group">
                 <p>HSC marksheet</p><br>
-                <input type="file" name="hscmarksheet" id="hscmarksheet">
+                <input type="file" name="hscmarksheet" id="hscmarksheet" required>
               </div>
               <div class="form-group">
                 <p>SSC marksheet</p><br>
-                <input type="file" name="hscmarksheet" id="sscmarksheet">
+                <input type="file" name="hscmarksheet" id="sscmarksheet" required>
               </div>
               <div class="form-group">
                 <p>All semister marksheet tillnow</p><br>
