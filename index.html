@@ -257,12 +257,12 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="telephone">Telephone-Home</label><br>
-                <input type="text"id="telephone-home" name="telephone-home" placeholder="0123456789" minlength="10" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits"  >
-              </div>
-              <div class="form-group">
                 <label for="telephone">Telephone-Mobile</label><br>
                 <input type="text"id="telephone-mobile" required name="telephone-mobile" placeholder="0123456789" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" >
+              </div>
+              <div class="form-group">
+                <label for="telephone">Telephone-Home</label><br>
+                <input type="text"id="telephone-home" name="telephone-home" placeholder="0123456789" minlength="10" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits"  >
               </div>
               
               <button type="button" class="next-btn">Next</button>
@@ -326,7 +326,7 @@
               </div>
               <div class="form-group">
                 <p>All semister marksheet tillnow</p><br>
-                <input type="file" name="allsemarksheet" id="allsemarksheet">
+                <input type="file" name="allsemarksheet" id="allsemarksheet" required>
               </div>
               <button type="button" class="previous-btn">Prev</button>
               <button type="submit" id="btn" class="submit-btn">Submit</button>
