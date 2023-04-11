@@ -14,8 +14,8 @@
     padding: 150px 0%;
     margin: 0;
     background-color: rgba(59,100,237,255);
-    background: url("image.jpg") ;
-    color: #ffffff;
+   /* background: url("image.jpg") ;
+    */color: #ffffff;
     font-family: 'Poppins',sans-serif;
     font-size: 16px;
   }
@@ -62,7 +62,9 @@
   .container:hover{
     background-color: rgb(67, 67, 67);
   }
-
+  .step.step.step-2 input{
+    width: 90%;
+  }
   .step {
     color: #ffffff;
     display: none;

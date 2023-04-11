@@ -13,14 +13,14 @@
     </header>
     <section>
         <div class="container">
-          <form>
+          <form action="connect.php" method="post">
       
             <div class="step step-1 active">
                 <h2>Personal Information</h2>
               <div class="form-group">
                 <label for="name">Full Name</label><br>
-                <input type="text" id="firstName" name="candidate-first-name" placeholder="FirstName" required>
-                <input type="text" id="lastName" name="candidate-last-name" placeholder="lastName" required>
+                <input type="text" id="firstName" name="firstName" placeholder="FirstName" required>
+                <input type="text" id="lastName" name="lastName" placeholder="lastName" required>
               </div>
               <div class="form-group">
                 <label for="dob"> Date of Birth</label><br>
@@ -299,11 +299,11 @@
               </div>
               <div class="form-group">
                 <label for="currentscore"> Overall Percentage</label><br>
-                <input type="number" name="currentscore" id="currentscore" placeholder="score in percentage"  >
+                <input type="number" name="currentscore" id="currentscore" placeholder="score in percentage" required >
               </div>
               <div class="form-group">
-                <label for="backlogs"> Current Backlogs(If any)</label><br>
-                <input type="text" name="backlogs" id="backlogs" placeholder="backlogs">
+                <label for="backlogs"> Current Backlogs(If any else write 'no')</label><br>
+                <input type="text" name="backlogs" id="backlogs" placeholder="backlogs" required>
               </div>
               <button type="button" class="previous-btn">Prev</button>
               <button type="button" class="next-btn">Next</button>
@@ -330,7 +330,7 @@
               <button type="button" class="previous-btn">Prev</button>
               <button type="submit" id="btn" class="submit-btn">Submit</button>
             </div>
-      
+            
           </form>
         </div>
       </section>
